@@ -1,0 +1,222 @@
+@import "reset";
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-style: Italic;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mb{
+    margin-bottom: 16px;
+}
+
+.title{
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: 500;
+}
+
+/*** Banner ***/
+.banner{
+    height: 958px;
+    background-image: url("../img/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.intro{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    
+    h1{
+        font-weight: bolder;
+        font-size: 80px;
+        line-height: 94px;
+        margin-bottom: 32px;
+    }
+
+    span{
+        display: block;
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: lighter;
+    }
+
+    p{
+        margin-bottom: 48px;
+    }
+}
+
+.icon{
+    width: 288px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*** About ***/
+.aboutMe{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 56px;
+
+    img{
+        width: 384px;
+        margin-bottom: 24px; 
+    }
+
+    h2{
+        margin-bottom: 40px; 
+    }
+}
+
+.edu{
+    margin-bottom: 12px;
+}
+
+.borderLine{
+    width: 384px;
+    margin-bottom: 32px; 
+}
+
+.exp li::before{
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: #891818;
+    display: inline-block;
+    border-radius: 100%;
+    margin-right: 16px;
+    margin-left: -16px;
+}
+
+/*** Brand ***/
+.XXXD{
+    background-color: #000;
+    color: #FFF;
+    border: 1px solid #707070;
+    margin-bottom: 64px; 
+}
+
+.brand{
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 160px;
+
+    span{
+        display: block;
+        margin-bottom: 32px; 
+    }
+
+    p{
+        font-size: 20px;
+        margin-bottom: 68px; 
+    }
+}
+
+.br-lg{
+    width: 66%;
+    margin-bottom: 40px; 
+}
+
+.br-s{
+    display: flex;
+    justify-content: space-between;
+
+    li{
+        width: 49%;
+    }
+}
+
+/*** Work ***/
+.work{
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 104px;
+
+    h2{
+        margin-bottom: 24px;
+    }
+
+    p{
+        font-size: 20px;
+        margin-bottom: 56px;
+    }
+}
+
+.works{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    li{
+        margin-bottom: 56px;
+    }
+
+    span{
+        font-size: 20px;
+        display: block;
+    }
+
+    img{
+        margin-bottom: 16px;
+    }
+}
+
+.col-s{
+    width: 32%;
+}
+
+.col-m{
+    width: 49%;
+}
+
+/*** Contact ***/
+.contact{
+    font-weight: 500;
+    color: #FFF;
+    background-color: #000;
+    padding-top: 64px;
+    padding-bottom: 80px;
+    text-align: center;
+
+    a{
+        color: #FFF; 
+        text-decoration: none;
+
+        &:hover{
+            border-bottom: 1px solid #FFF;
+        }
+    }
+}
