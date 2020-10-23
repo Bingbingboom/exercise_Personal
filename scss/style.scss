@@ -17,15 +17,26 @@ img{
     display: block;
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .mb{
     margin-bottom: 16px;
 }
 
+.col-s{
+    width: 32%;
+}
+
+.col-m{
+    width: 49%;
+}
+
+.col-lg{
+    width: 66%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .title{
     font-size: 64px;
     line-height: 75px;
@@ -145,17 +156,20 @@ img{
     }
 }
 
-.br-lg{
-    width: 66%;
-    margin-bottom: 40px; 
-}
 
-.br-s{
+.br{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    justify-content: center;
 
     li{
-        width: 49%;
+        &:first-child{
+            margin-bottom: 40px;
+        }
+        &:nth-child(2){
+            margin-right: 24px;
+        }
     }
 }
 
@@ -194,13 +208,7 @@ img{
     }
 }
 
-.col-s{
-    width: 32%;
-}
 
-.col-m{
-    width: 49%;
-}
 
 /*** Contact ***/
 .contact{
